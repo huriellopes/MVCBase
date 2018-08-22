@@ -1,0 +1,33 @@
+{
+	"name": "huriellopes/MVCBase",
+	"description": "Sistema de mvc base",
+	"require": {
+		"php": ">=5.6",
+		"squizlabs/php_codesniffer": "^3.0"
+	},
+	"authors": [
+        {
+            "name": "Huriel Lopes",
+            "email": "huriellopes1996@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"Base\\": "src",
+			"App\\": "app"
+		}
+	},
+	"scripts": {
+		"server": "php -S localhost:8000 -t public",
+		"dump": "composer dumpautoload",
+		"bootstrap": "npm install bootstrap",
+		"jquery": "npm install jquery",
+		"popper.js": "npm install popper.js",
+		"sweetalert": "npm install bootstrap-sweetalert",
+		"phpcs": "vendor\\bin\\phpcs",
+		"phpcbf": "vendor\\bin\\phpcbf"
+	},
+	"config": {
+    	"process-timeout": 0
+    }
+}

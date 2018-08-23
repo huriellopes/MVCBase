@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Base\Init\RouteDefault;
+use Gira\Init\RouteDefault;
 
 class Route extends RouteDefault
 {

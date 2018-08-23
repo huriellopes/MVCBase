@@ -1,4 +1,6 @@
 .sass-cache
 node_modules
 /vendor/
+package.json
+package-lock.json
 composer.lock

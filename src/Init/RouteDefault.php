@@ -28,6 +28,8 @@ abstract class RouteDefault
                 $controller = new $class;
                 $action = $route['action'];
                 $controller->$action();
+            } else {
+                include_once "../app/Views/errors/404.php";
             }
         });
     }

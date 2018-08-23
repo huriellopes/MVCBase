@@ -16,8 +16,8 @@ abstract class Controller
     {
         $this->action = $action;
 
-        if ($layout == true && file_exists("../App/Views/layout.php")) {
-            include_once "../App/Views/layout.php";
+        if ($layout == true && file_exists("../app/Views/layout.php")) {
+            include_once "../app/Views/layout.php";
         } else {
             $this->content();
         }
@@ -27,6 +27,6 @@ abstract class Controller
     {
         $current = get_class($this);
         $singleClassName = strtolower((str_replace("Controller", "", str_replace("App\\Controllers\\", "", $current))));
-        include_once "../App/Views/".$singleClassName."/".$this->action.".php";
+        include_once "../app/Views/".$singleClassName."/".$this->action.".php";
     }
 }
